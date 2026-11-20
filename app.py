@@ -6,7 +6,7 @@ st.title("Shridevi Institute of Engineering and Technology - ChatBot")
 st.caption("Ask anything about college information....")
 st.caption("Created by Athiya firdose")
 
-mykey = st.secret["GROQ_API_KEY"]
+mykey = st.secrets["GROQ_API_KEY"]
 
 
 # Initialize RAG engine
