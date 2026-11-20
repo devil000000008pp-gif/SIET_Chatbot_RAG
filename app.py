@@ -1,6 +1,5 @@
 import streamlit as st
 from rag_engine import load_base, ask_rag
-
 st.set_page_config(page_title="SIET_Chatbot", layout="centered")
 st.title("Shridevi Institute of Engineering and Technology-Chatbot")
 st.caption("Ask anything about the college information.")
@@ -24,12 +23,10 @@ for qa in st.session_state.chat_hist:
 question = st.chat_input("Ask anything about SIET college...")
 
 if question:
-
     st.session_state.chat_hist.append({
         "role": "user",
         "content": question
     })
-
     with st.chat_message("user"):
         st.write(question)
 
