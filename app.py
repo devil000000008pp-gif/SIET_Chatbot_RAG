@@ -18,7 +18,7 @@ def initiate_rag():
     
     for qa in st.session_state.chat_hist:
       with st.chat_message(qa["role"]):
-        st."write"(qa["content"])
+        st.write(qa["content"])
         
         question = st.chat_input("Ask anythig about SIET college....")
         
