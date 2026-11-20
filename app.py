@@ -33,7 +33,9 @@ def initiate_rag():
         answer = ask_rag(question,embed_model,chunks,index,api_key = mykey, num_chunks)
         st.write(answer)
 
-if st.button("clear
+if st.button("clear chat"):
+  st.session_state.chat_hist =[]
+  st.rerun()
 
 
 
