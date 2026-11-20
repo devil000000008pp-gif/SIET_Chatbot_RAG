@@ -30,7 +30,7 @@ def initiate_rag():
       
     with st.chat_message("Asstitant"):
       with st.spinner("asking RAG for answer..."):
-        answer = ask_rag(question,embed_model,chunks,index,api_key = mykey, num_chunks)
+        answer = ask_rag(question,embed_model,chunks,index,api_key = mykey, num_chunks=3)
         st.write(answer)
 
  if st.button("clear chat"):
