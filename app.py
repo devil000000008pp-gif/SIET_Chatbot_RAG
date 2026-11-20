@@ -24,10 +24,10 @@ for qa in st.session_state.chat_hist:
 question = st.chat_input("Ask anything about SIET college...")
 
 if question:
-    st.session_state.chat_hist.append({
+    st.session_state.chat_hist.append[{
         "role": "user",
         "content": question
-    })
+    }]
     with st.chat_message("user"):
         st.write(question)
 
@@ -35,10 +35,10 @@ if question:
         with st.spinner("Asking RAG for answer..."):
             answer = ask_rag(question,embed_model,chunks,index,api_key=mykey,num_chunks=3)
             st.write(answer)
-            st.session_state.chat_hist.append({
+            st.session_state.chat_hist.append[{
                 "role": "assistant",
                 "content": answer
-            })
+            }]
             if st.button("Clear Chat"):
                 st.session_state.chat_hist = []
                 st.rerun()
