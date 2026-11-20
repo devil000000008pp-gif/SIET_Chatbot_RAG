@@ -13,7 +13,7 @@ def initiate_rag():
   
   index, emded_model, chunks = initiate_rag()
 
-if"chat_hist" not is st.session_state:
+if "chat_hist" not st.session_state:
   st.session_state.chat_hist = []
 
 for qa in st.session_state.chat_hist : 
