@@ -24,7 +24,7 @@ def initiate_rag():
         
   if question:
     st.session_state.chat_hist.append(
-      {"role" : "user" , content = question})
+      {"role" : "user" , "content" : "question"})
     with st.chat_message("user"):
       st.write(question)
       
