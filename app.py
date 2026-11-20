@@ -26,7 +26,7 @@ question = st.chat_input("Ask anything about SIET college...")
 if question:
     st.session_state.chat_hist.append[{
         "role": "user",
-        "content": question
+        content: question
     }]
     with st.chat_message("user"):
         st.write(question)
@@ -37,7 +37,7 @@ if question:
             st.write(answer)
             st.session_state.chat_hist.append[{
                 "role": "assistant",
-                "content": answer
+                content: answer
             }]
             if st.button("Clear Chat"):
                 st.session_state.chat_hist = []
