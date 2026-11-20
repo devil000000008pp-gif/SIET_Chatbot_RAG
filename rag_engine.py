@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransFormer
 
 #load pdfs
 def load_pdf (pdf_path):
-  reader = PDFReaders(str(pdf_path))
+  reader = PdfReader(str(pdf_path))
   mypages = [ i.extract_text() or "" for i in reader.pages]
   full_text = "\n".join(mypages).strip()
   if not full_text:
